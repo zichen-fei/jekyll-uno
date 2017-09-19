@@ -1,0 +1,45 @@
+# Site settings
+title: 费子晨-主页
+description: '河南大学&emsp;&emsp;计算机科学与技术'
+url: ''
+baseurl: ''
+#google_analytics: 'UA-XXXXXX-X'
+#disqus_shortname: 'your-disqus-name'
+baidu_analytics: 'fdc5ceaf5ebd628f4694cf7bd4d03208'
+
+author:
+  name: '费子晨'
+  email: zichen-fei@live.com
+  blog: "http://www.cnblogs.com/gcoder/"
+  #twitter_username: 
+  #facebook_username: 
+  github_username:  zichen-fei
+  #linkedin_username:  joshgerdes
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
